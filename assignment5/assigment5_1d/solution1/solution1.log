@@ -1,0 +1,299 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part virtex7 
+INFO: [HLS 200-1611] Setting target device to 'xc7v585t-ffg1761-2'
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 4.28 seconds. CPU system time: 1.21 seconds. Elapsed time: 5.65 seconds; current allocated memory: 250.965 MB.
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0.06 seconds. CPU system time: 0.28 seconds. Elapsed time: 0.55 seconds; current allocated memory: 251.093 MB.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 251.294 MB.
+INFO: [HLS 200-10] Analyzing design file 'arr_mult_1d.cpp' ... 
+WARNING: [HLS 207-5528] Ignore interface attribute or pragma which is not used in top function: arr_mult_1d.cpp:11:9
+WARNING: [HLS 207-5301] unused parameter 'print': /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 7.3 seconds. CPU system time: 1 seconds. Elapsed time: 9.06 seconds; current allocated memory: 253.139 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-248] Applying array_partition to 'inA': Complete partitioning on dimension 1. (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-248] Applying array_partition to 'inB': Complete partitioning on dimension 1. (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-248] Applying array_partition to 'out': Complete partitioning on dimension 1. (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'out_19' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'out_18' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'out_17' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'out_16' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'out_15' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'out_14' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'out_13' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'out_12' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'out_11' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'out_10' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'out_9' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'out_8' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'out_7' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'out_6' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'out_5' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'out_4' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'out_3' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'out_2' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'out_1' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'out_0' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_23' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_22' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_21' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_20' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_19' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_18' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_17' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_16' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_15' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_14' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_13' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_12' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_11' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_10' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_9' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_8' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_7' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_6' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_5' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_4' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_3' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_2' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_1' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inB_0' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inA_19' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inA_18' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inA_17' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inA_16' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inA_15' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inA_14' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inA_13' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inA_12' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inA_11' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inA_10' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inA_9' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inA_8' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inA_7' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inA_6' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inA_5' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inA_4' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inA_3' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inA_2' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inA_1' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-241] Aggregating bram variable 'inA_0' with field bit alignment mode in 22-bits (arr_mult_1d.cpp:7:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i22.s_struct.ap_ints' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i22.s_struct.ap_ints.1' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i22.s_struct.ap_ints' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i22.s_struct.ap_ints.1' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i22.s_struct.ap_ints' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i22.s_struct.ap_ints.1' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i22.s_struct.ap_ints' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i22.s_struct.ap_ints.1' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i22.s_struct.ap_ints' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i22.s_struct.ap_ints.1' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i22.s_struct.ap_ints' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i22.s_struct.ap_ints.1' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i22.s_struct.ap_ints' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i22.s_struct.ap_ints.1' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i22.s_struct.ap_ints' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i22.s_struct.ap_ints.1' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i22.s_struct.ap_ints' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i22.s_struct.ap_ints.1' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i22.s_struct.ap_ints' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i22.s_struct.ap_ints.1' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i22.s_struct.ap_ints' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i22.s_struct.ap_ints.1' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i22.s_struct.ap_ints' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i22.s_struct.ap_ints.1' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i22.s_struct.ap_ints' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i22.s_struct.ap_ints.1' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i22.s_struct.ap_ints' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i22.s_struct.ap_ints.1' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i22.s_struct.ap_ints' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i22.s_struct.ap_ints.1' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i22.s_struct.ap_ints' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i22.s_struct.ap_ints.1' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i22.s_struct.ap_ints' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i22.s_struct.ap_ints.1' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i22.s_struct.ap_ints' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i22.s_struct.ap_ints.1' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i22.s_struct.ap_ints' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i22.s_struct.ap_ints.1' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i22.s_struct.ap_ints' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i22.s_struct.ap_ints.1' into 'arr_mult_1d(ap_int<22> (*) [24], ap_int<22> (*) [10], ap_int<22> (*) [10])' (arr_mult_1d.cpp:23:23)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 8.64 seconds. CPU system time: 1.6 seconds. Elapsed time: 10.86 seconds; current allocated memory: 258.258 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 258.261 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.06 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.15 seconds; current allocated memory: 265.918 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.11 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.17 seconds; current allocated memory: 274.852 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_19_2' (arr_mult_1d.cpp:19) in function 'arr_mult_1d' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_19_2' (arr_mult_1d.cpp:19) in function 'arr_mult_1d' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_20_3' (arr_mult_1d.cpp:20) in function 'arr_mult_1d' completely with a factor of 24.
+INFO: [XFORM 203-11] Balancing expressions in function 'arr_mult_1d' (arr_mult_1d.cpp:18:23)...45 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1.93 seconds. CPU system time: 0.1 seconds. Elapsed time: 2.07 seconds; current allocated memory: 313.103 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_18_1' (arr_mult_1d.cpp:18:39) in function 'arr_mult_1d'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1.66 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.72 seconds; current allocated memory: 325.769 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'arr_mult_1d' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'arr_mult_1d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln870_23) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_18_1_VITIS_LOOP_19_2'.
+WARNING: [HLS 200-885] The II Violation in module 'arr_mult_1d' (loop 'VITIS_LOOP_18_1_VITIS_LOOP_19_2'): Unable to schedule 'load' operation ('inA_18_load_9') on array 'inA_18' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'inA_18'.
+WARNING: [HLS 200-885] The II Violation in module 'arr_mult_1d' (loop 'VITIS_LOOP_18_1_VITIS_LOOP_19_2'): Unable to schedule 'load' operation ('inA_18_load_1') on array 'inA_18' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'inA_18'.
+WARNING: [HLS 200-885] The II Violation in module 'arr_mult_1d' (loop 'VITIS_LOOP_18_1_VITIS_LOOP_19_2'): Unable to schedule 'load' operation ('inA_18_load_3') on array 'inA_18' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'inA_18'.
+WARNING: [HLS 200-885] The II Violation in module 'arr_mult_1d' (loop 'VITIS_LOOP_18_1_VITIS_LOOP_19_2'): Unable to schedule 'load' operation ('inA_18_load_5') on array 'inA_18' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'inA_18'.
+WARNING: [HLS 200-885] The II Violation in module 'arr_mult_1d' (loop 'VITIS_LOOP_18_1_VITIS_LOOP_19_2'): Unable to schedule 'load' operation ('inA_18_load_20') on array 'inA_18' due to limited memory ports (II = 11). Please consider using a memory core with more ports or partitioning the array 'inA_18'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 12, Depth = 14, loop 'VITIS_LOOP_18_1_VITIS_LOOP_19_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 10.82 seconds. CPU system time: 0.11 seconds. Elapsed time: 11.1 seconds; current allocated memory: 335.670 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.87 seconds. CPU system time: 0.29 seconds. Elapsed time: 1.24 seconds; current allocated memory: 342.567 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'arr_mult_1d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inA_0' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inA_1' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inA_2' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inA_3' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inA_4' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inA_5' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inA_6' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inA_7' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inA_8' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inA_9' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inA_10' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inA_11' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inA_12' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inA_13' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inA_14' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inA_15' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inA_16' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inA_17' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inA_18' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inA_19' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_0' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_1' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_2' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_3' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_4' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_5' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_6' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_7' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_8' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_9' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_10' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_11' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_12' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_13' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_14' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_15' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_16' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_17' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_18' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_19' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_20' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_21' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_22' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/inB_23' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/out_0' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/out_1' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/out_2' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/out_3' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/out_4' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/out_5' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/out_6' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/out_7' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/out_8' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/out_9' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/out_10' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/out_11' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/out_12' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/out_13' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/out_14' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/out_15' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/out_16' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/out_17' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/out_18' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'arr_mult_1d/out_19' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'arr_mult_1d' to 's_axilite & ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'arr_mult_1d' pipeline 'VITIS_LOOP_18_1_VITIS_LOOP_19_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_0_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_0_Din_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_0_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_0_Din_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_1_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_1_Din_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_1_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_1_Din_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_2_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_2_Din_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_2_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_2_Din_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_3_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_3_Din_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_3_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_3_Din_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_4_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_4_Din_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_4_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_4_Din_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_5_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_5_Din_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_5_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_5_Din_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_6_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_6_Din_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_6_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_6_Din_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_7_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_7_Din_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_7_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_7_Din_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_8_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_8_Din_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_8_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_8_Din_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_9_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_9_Din_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_9_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_9_Din_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_10_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_10_Din_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_10_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_10_Din_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_11_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_11_Din_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_11_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_11_Din_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_12_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_12_Din_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_12_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_12_Din_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_13_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_13_Din_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'arr_mult_1d/inA_13_WEN_B' to 0.

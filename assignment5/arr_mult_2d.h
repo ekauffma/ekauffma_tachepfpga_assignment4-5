@@ -4,10 +4,11 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <math.h>
+#include "ap_int.h"
 
-#define ROW_SIZE_A 20;
-#define SIZE_INTER 24;
-#define COL_SIZE_B 10;
+#define ROW_SIZE_A 20
+#define SIZE_INTER 24
+#define COL_SIZE_B 10
 
 typedef ap_int<22> din_t;
 typedef ap_int<22> dout_t;

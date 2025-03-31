@@ -1,0 +1,184 @@
+
+
+================================================================
+== Synthesis Summary Report of 'arr_mult_2d'
+================================================================
++ General Information: 
+    * Date:           Mon Mar 31 16:20:50 2025
+    * Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)
+    * Project:        assigment5_2d
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtex7
+    * Target device:  xc7v585t-ffg1761-2
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |               Modules              | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |      |         |           |           |     |
+    |               & Loops              | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF    |    LUT    | URAM|
+    +------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |+ arr_mult_2d                       |     -|  0.32|     2403|  2.403e+04|         -|     2404|     -|        no|     -|  1 (~0%)|  602 (~0%)|  4186 (1%)|    -|
+    | o VITIS_LOOP_21_1_VITIS_LOOP_22_2  |    II|  7.30|     2401|  2.401e+04|        14|       12|   200|       yes|     -|        -|          -|          -|    -|
+    +------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE
++---------------+------------+---------------+
+| Interface     | Data Width | Address Width |
++---------------+------------+---------------+
+| s_axi_control | 32         | 4             |
++---------------+------------+---------------+
+
+* BRAM
++--------------+------------+---------------+
+| Interface    | Data Width | Address Width |
++--------------+------------+---------------+
+| inA_0_PORTA  | 32         | 32            |
+| inA_10_PORTA | 32         | 32            |
+| inA_11_PORTA | 32         | 32            |
+| inA_12_PORTA | 32         | 32            |
+| inA_13_PORTA | 32         | 32            |
+| inA_14_PORTA | 32         | 32            |
+| inA_15_PORTA | 32         | 32            |
+| inA_16_PORTA | 32         | 32            |
+| inA_17_PORTA | 32         | 32            |
+| inA_18_PORTA | 32         | 32            |
+| inA_19_PORTA | 32         | 32            |
+| inA_1_PORTA  | 32         | 32            |
+| inA_20_PORTA | 32         | 32            |
+| inA_21_PORTA | 32         | 32            |
+| inA_22_PORTA | 32         | 32            |
+| inA_23_PORTA | 32         | 32            |
+| inA_2_PORTA  | 32         | 32            |
+| inA_3_PORTA  | 32         | 32            |
+| inA_4_PORTA  | 32         | 32            |
+| inA_5_PORTA  | 32         | 32            |
+| inA_6_PORTA  | 32         | 32            |
+| inA_7_PORTA  | 32         | 32            |
+| inA_8_PORTA  | 32         | 32            |
+| inA_9_PORTA  | 32         | 32            |
+| inB_0_PORTA  | 32         | 32            |
+| inB_0_PORTB  | 32         | 32            |
+| inB_1_PORTA  | 32         | 32            |
+| inB_1_PORTB  | 32         | 32            |
+| inB_2_PORTA  | 32         | 32            |
+| inB_2_PORTB  | 32         | 32            |
+| inB_3_PORTA  | 32         | 32            |
+| inB_3_PORTB  | 32         | 32            |
+| inB_4_PORTA  | 32         | 32            |
+| inB_4_PORTB  | 32         | 32            |
+| inB_5_PORTA  | 32         | 32            |
+| inB_5_PORTB  | 32         | 32            |
+| inB_6_PORTA  | 32         | 32            |
+| inB_6_PORTB  | 32         | 32            |
+| inB_7_PORTA  | 32         | 32            |
+| inB_7_PORTB  | 32         | 32            |
+| inB_8_PORTA  | 32         | 32            |
+| inB_8_PORTB  | 32         | 32            |
+| inB_9_PORTA  | 32         | 32            |
+| inB_9_PORTB  | 32         | 32            |
+| out_0_PORTA  | 32         | 32            |
+| out_1_PORTA  | 32         | 32            |
+| out_2_PORTA  | 32         | 32            |
+| out_3_PORTA  | 32         | 32            |
+| out_4_PORTA  | 32         | 32            |
+| out_5_PORTA  | 32         | 32            |
+| out_6_PORTA  | 32         | 32            |
+| out_7_PORTA  | 32         | 32            |
+| out_8_PORTA  | 32         | 32            |
+| out_9_PORTA  | 32         | 32            |
++--------------+------------+---------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+-------------+
+| Argument | Direction | Datatype    |
++----------+-----------+-------------+
+| inA      | in        | ap_int<22>* |
+| inB      | in        | ap_int<22>* |
+| out      | out       | ap_int<22>* |
++----------+-----------+-------------+
+
+* SW-to-HW Mapping
++----------+--------------+-----------+
+| Argument | HW Name      | HW Type   |
++----------+--------------+-----------+
+| inA      | inA_0_PORTA  | interface |
+| inA      | inA_1_PORTA  | interface |
+| inA      | inA_2_PORTA  | interface |
+| inA      | inA_3_PORTA  | interface |
+| inA      | inA_4_PORTA  | interface |
+| inA      | inA_5_PORTA  | interface |
+| inA      | inA_6_PORTA  | interface |
+| inA      | inA_7_PORTA  | interface |
+| inA      | inA_8_PORTA  | interface |
+| inA      | inA_9_PORTA  | interface |
+| inA      | inA_10_PORTA | interface |
+| inA      | inA_11_PORTA | interface |
+| inA      | inA_12_PORTA | interface |
+| inA      | inA_13_PORTA | interface |
+| inA      | inA_14_PORTA | interface |
+| inA      | inA_15_PORTA | interface |
+| inA      | inA_16_PORTA | interface |
+| inA      | inA_17_PORTA | interface |
+| inA      | inA_18_PORTA | interface |
+| inA      | inA_19_PORTA | interface |
+| inA      | inA_20_PORTA | interface |
+| inA      | inA_21_PORTA | interface |
+| inA      | inA_22_PORTA | interface |
+| inA      | inA_23_PORTA | interface |
+| inB      | inB_0_PORTA  | interface |
+| inB      | inB_0_PORTB  | interface |
+| inB      | inB_1_PORTA  | interface |
+| inB      | inB_1_PORTB  | interface |
+| inB      | inB_2_PORTA  | interface |
+| inB      | inB_2_PORTB  | interface |
+| inB      | inB_3_PORTA  | interface |
+| inB      | inB_3_PORTB  | interface |
+| inB      | inB_4_PORTA  | interface |
+| inB      | inB_4_PORTB  | interface |
+| inB      | inB_5_PORTA  | interface |
+| inB      | inB_5_PORTB  | interface |
+| inB      | inB_6_PORTA  | interface |
+| inB      | inB_6_PORTB  | interface |
+| inB      | inB_7_PORTA  | interface |
+| inB      | inB_7_PORTB  | interface |
+| inB      | inB_8_PORTA  | interface |
+| inB      | inB_8_PORTB  | interface |
+| inB      | inB_9_PORTA  | interface |
+| inB      | inB_9_PORTB  | interface |
+| out      | out_0_PORTA  | interface |
+| out      | out_1_PORTA  | interface |
+| out      | out_2_PORTA  | interface |
+| out      | out_3_PORTA  | interface |
+| out      | out_4_PORTA  | interface |
+| out      | out_5_PORTA  | interface |
+| out      | out_6_PORTA  | interface |
+| out      | out_7_PORTA  | interface |
+| out      | out_8_PORTA  | interface |
+| out      | out_9_PORTA  | interface |
++----------+--------------+-----------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+

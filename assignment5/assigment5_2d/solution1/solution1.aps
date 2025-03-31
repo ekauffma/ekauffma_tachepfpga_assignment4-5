@@ -1,0 +1,19 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <clockList>
+        <clock name="default" period="10" default="false"/>
+    </clockList>
+    <name>
+        <value string="solution1"/>
+    </name>
+    <project>
+        <value string="assigment5_2d"/>
+    </project>
+    <targetInfo>
+        <TargetInfo value="xc7v585t:-ffg1761:-2"/>
+    </targetInfo>
+    <libraryList>
+        <library value="xilinx/virtex7/virtex7" name="DefaultPlatform"/>
+    </libraryList>
+    <flowTarget value="vivado"/>
+</AutoPilot:solution>
+
