@@ -5,7 +5,7 @@
 #include <stdint.h>
 #include <math.h>
 
-#define ARRAY_SIZE 20
+const int ARRAY_SIZE = 20;
 
 typedef char      dinA_t;
 typedef short     dinB_t;

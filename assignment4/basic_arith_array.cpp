@@ -1,4 +1,4 @@
-#include "basic_arith_array.cpp"
+#include "basic_arith_array.h"
 
 void basic_arith_array(
     dinA_t inA[],
@@ -12,6 +12,7 @@ void basic_arith_array(
     int size) {
 
     for(size_t i=0; i<size; i++) {
+        #pragma HLS loop_tripcount min=1 max=ARRAY_SIZE
         out1[i] = inA[i] * inB[i];
         out2[i] = inB[i] + inA[i];
         out3[i] = inC[i] / inA[i];

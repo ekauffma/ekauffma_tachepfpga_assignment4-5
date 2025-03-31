@@ -7,15 +7,19 @@ int main() {
     dinC_t inC[ARRAY_SIZE];
     dinD_t inD[ARRAY_SIZE];
 
-    dout1_t out1[ARRAY_SIZE]
-    dout2_t out2[ARRAY_SIZE]
-    dout3_t out3[ARRAY_SIZE]
-    dout4_t out4[ARRAY_SIZE]
+    dout1_t out1[ARRAY_SIZE];
+    dout2_t out2[ARRAY_SIZE];
+    dout3_t out3[ARRAY_SIZE];
+    dout4_t out4[ARRAY_SIZE];
 
     dout1_t out1_ref = 0;
     dout2_t out2_ref = 0;
     dout3_t out3_ref = 0;
     dout4_t out4_ref = 0;
+
+    int retval = 0;
+
+    FILE *fref, *fres;
 
     for (size_t i = 0; i < ARRAY_SIZE; i++) {
         inA[i] = i+2;
@@ -25,12 +29,12 @@ int main() {
     }
 
     // make output reference file
-    fref = fopen("result_basic_arith_arr_ref.dat", "w");
+    fref = fopen("result_basic_arith_array_ref.dat", "w");
     for (size_t j = 0; j < ARRAY_SIZE; j++) {
         out1_ref = inA[j] * inB[j];
         out2_ref = inB[j] + inA[j];
         out3_ref = inC[j] / inA[j];
-        out3_ref = inD[j] % inA[j];
+        out4_ref = inD[j] % inA[j];
         fprintf(
             fref, "%d*%d=%d; %d+%d=%d; %d/%d=%d; %d mod %d=%d;\n",
             inA[j], inB[j], out1_ref, 
@@ -44,7 +48,7 @@ int main() {
     // fpga function call
     basic_arith_array(inA, inB, inC, inD, out1, out2, out3, out4, ARRAY_SIZE);
    
-    fres = fopen("result_basic_arith_arr.dat", "w");
+    fres = fopen("result_basic_arith_array.dat", "w");
     for (size_t k = 0; k < ARRAY_SIZE; k++) {
         fprintf(
             fres, "%d*%d=%d; %d+%d=%d; %d/%d=%d; %d mod %d=%d;\n",
