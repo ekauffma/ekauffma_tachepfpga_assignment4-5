@@ -1,0 +1,96 @@
+
+
+================================================================
+== Synthesis Summary Report of 'basic_arith_array'
+================================================================
++ General Information: 
+    * Date:           Mon Mar 31 14:35:01 2025
+    * Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)
+    * Project:        assignment4_ctypes
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtex7
+    * Target device:  xc7v585t-ffg1761-2
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------+------+------+---------+---------+----------+---------+------+----------+------+---------+------------+-----------+-----+
+    |       Modules       | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |         |            |           |     |
+    |       & Loops       | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF     |    LUT    | URAM|
+    +---------------------+------+------+---------+---------+----------+---------+------+----------+------+---------+------------+-----------+-----+
+    |+ basic_arith_array  |     -|  4.64|       91|  910.000|         -|       92|     -|        no|     -|  1 (~0%)|  11296 (1%)|  8529 (2%)|    -|
+    | o VITIS_LOOP_14_1   |     -|  7.30|       86|  860.000|        68|        1|    20|       yes|     -|        -|           -|          -|    -|
+    +---------------------+------+------+---------+---------+----------+---------+------+----------+------+---------+------------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* REGISTER
++-----------+---------+----------+
+| Interface | Mode    | Bitwidth |
++-----------+---------+----------+
+| inA       | ap_none | 8        |
+| inB       | ap_none | 16       |
+| inC       | ap_none | 32       |
+| inD       | ap_none | 64       |
+| out1      | ap_none | 32       |
+| out2      | ap_none | 32       |
+| out3      | ap_none | 32       |
+| out4      | ap_none | 64       |
+| size      | ap_none | 32       |
++-----------+---------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------------+
+| Argument | Direction | Datatype       |
++----------+-----------+----------------+
+| inA      | in        | char*          |
+| inB      | in        | short*         |
+| inC      | in        | int*           |
+| inD      | in        | long long int* |
+| out1     | out       | int*           |
+| out2     | out       | unsigned int*  |
+| out3     | out       | int*           |
+| out4     | out       | long int*      |
+| size     | in        | int            |
++----------+-----------+----------------+
+
+* SW-to-HW Mapping
++----------+-------------+---------+
+| Argument | HW Name     | HW Type |
++----------+-------------+---------+
+| inA      | inA         | port    |
+| inB      | inB         | port    |
+| inC      | inC         | port    |
+| inD      | inD         | port    |
+| out1     | out1        | port    |
+| out1     | out1_ap_vld | port    |
+| out2     | out2        | port    |
+| out2     | out2_ap_vld | port    |
+| out3     | out3        | port    |
+| out3     | out3_ap_vld | port    |
+| out4     | out4        | port    |
+| out4     | out4_ap_vld | port    |
+| size     | size        | port    |
++----------+-------------+---------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+

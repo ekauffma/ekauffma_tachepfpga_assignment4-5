@@ -1,0 +1,40 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="basic_arith_array" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="basic_arith_array"/>
+            </pragma>
+        </directive>
+        <directive functionName="basic_arith_array" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="basic_arith_array"/>
+            </pragma>
+        </directive>
+        <directive functionName="basic_arith_array" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="basic_arith_array"/>
+            </pragma>
+        </directive>
+        <directive functionName="basic_arith_array" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="basic_arith_array"/>
+            </pragma>
+        </directive>
+        <directive functionName="basic_arith_array" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="basic_arith_array"/>
+            </pragma>
+        </directive>
+        <directive functionName="basic_arith_array" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="basic_arith_array"/>
+            </pragma>
+        </directive>
+        <directive functionName="basic_arith_array" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="basic_arith_array"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+
