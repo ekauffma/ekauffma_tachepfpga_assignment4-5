@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="dsp" LATENCY="3" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_12s_6s_18_4_1_U3" SOURCE="/afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:1524" VARIABLE="ret" MODULE="basic_arith_array_ap" LOOP="" DSP="1" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="ret_1_fu_157_p2" SOURCE="/afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:1525" VARIABLE="ret_1" MODULE="basic_arith_array_ap" LOOP="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln14_fu_172_p2" SOURCE="basic_arith_array_ap.cpp:14" VARIABLE="icmp_ln14" MODULE="basic_arith_array_ap" LOOP="VITIS_LOOP_14_1" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="i_2_fu_177_p2" SOURCE="basic_arith_array_ap.cpp:14" VARIABLE="i_2" MODULE="basic_arith_array_ap" LOOP="VITIS_LOOP_14_1" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op sdiv" ID="" IMPL="auto" LATENCY="36" OPTYPE="sdiv" PRAGMA="" RTLNAME="sdiv_22ns_6s_22_26_1_U1" SOURCE="/afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int.h:70" VARIABLE="sdiv_ln70" MODULE="basic_arith_array_ap" LOOP="VITIS_LOOP_14_1" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op srem" ID="" IMPL="auto" LATENCY="25" OPTYPE="srem" PRAGMA="" RTLNAME="srem_33ns_6s_6_37_1_U2" SOURCE="/afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:1544" VARIABLE="srem_ln1544" MODULE="basic_arith_array_ap" LOOP="VITIS_LOOP_14_1" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

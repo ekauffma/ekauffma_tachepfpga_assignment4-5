@@ -1,0 +1,78 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part virtex7 
+INFO: [HLS 200-1611] Setting target device to 'xc7v585t-ffg1761-2'
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2.22 seconds. CPU system time: 0.8 seconds. Elapsed time: 5.42 seconds; current allocated memory: 251.089 MB.
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2.13 seconds. CPU system time: 0.67 seconds. Elapsed time: 3.03 seconds; current allocated memory: 251.258 MB.
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 4.45 seconds. CPU system time: 1.34 seconds. Elapsed time: 6.09 seconds; current allocated memory: 251.307 MB.
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2.28 seconds. CPU system time: 0.88 seconds. Elapsed time: 3.76 seconds; current allocated memory: 251.406 MB.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 251.622 MB.
+INFO: [HLS 200-10] Analyzing design file 'basic_arith_array_ap.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 8.43 seconds. CPU system time: 1.02 seconds. Elapsed time: 10.12 seconds; current allocated memory: 253.336 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-241] Aggregating scalar variable 'out4' with field bit alignment mode in 6-bits (basic_arith_array_ap.cpp:12:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'out3' with field bit alignment mode in 22-bits (basic_arith_array_ap.cpp:12:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'out2' with field bit alignment mode in 13-bits (basic_arith_array_ap.cpp:12:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'out1' with field bit alignment mode in 18-bits (basic_arith_array_ap.cpp:12:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'inD' with field bit alignment mode in 33-bits (basic_arith_array_ap.cpp:12:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'inC' with field bit alignment mode in 22-bits (basic_arith_array_ap.cpp:12:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'inB' with field bit alignment mode in 12-bits (basic_arith_array_ap.cpp:12:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'inA' with field bit alignment mode in 6-bits (basic_arith_array_ap.cpp:12:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i18.s_struct.ap_int.9s' into 'basic_arith_array_ap(ap_int<6>*, ap_int<12>*, ap_int<22>*, ap_int<33>*, ap_int<18>*, ap_int<13>*, ap_int<22>*, ap_int<6>*, int)' (basic_arith_array_ap.cpp:16:10)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i6.s_struct.ap_ints.1' into 'basic_arith_array_ap(ap_int<6>*, ap_int<12>*, ap_int<22>*, ap_int<33>*, ap_int<18>*, ap_int<13>*, ap_int<22>*, ap_int<6>*, int)' (basic_arith_array_ap.cpp:19:17)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i6.s_struct.ap_ints' into 'basic_arith_array_ap(ap_int<6>*, ap_int<12>*, ap_int<22>*, ap_int<33>*, ap_int<18>*, ap_int<13>*, ap_int<22>*, ap_int<6>*, int)' (basic_arith_array_ap.cpp:19:17)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i22.s_struct.ap_int.3s.1' into 'basic_arith_array_ap(ap_int<6>*, ap_int<12>*, ap_int<22>*, ap_int<33>*, ap_int<18>*, ap_int<13>*, ap_int<22>*, ap_int<6>*, int)' (basic_arith_array_ap.cpp:18:17)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i22.s_struct.ap_int.3s' into 'basic_arith_array_ap(ap_int<6>*, ap_int<12>*, ap_int<22>*, ap_int<33>*, ap_int<18>*, ap_int<13>*, ap_int<22>*, ap_int<6>*, int)' (basic_arith_array_ap.cpp:18:17)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i13.s_struct.ap_int.12s.1' into 'basic_arith_array_ap(ap_int<6>*, ap_int<12>*, ap_int<22>*, ap_int<33>*, ap_int<18>*, ap_int<13>*, ap_int<22>*, ap_int<6>*, int)' (basic_arith_array_ap.cpp:17:17)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i13.s_struct.ap_int.12s' into 'basic_arith_array_ap(ap_int<6>*, ap_int<12>*, ap_int<22>*, ap_int<33>*, ap_int<18>*, ap_int<13>*, ap_int<22>*, ap_int<6>*, int)' (basic_arith_array_ap.cpp:17:17)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.bits.i18.s_struct.ap_int.9s.1' into 'basic_arith_array_ap(ap_int<6>*, ap_int<12>*, ap_int<22>*, ap_int<33>*, ap_int<18>*, ap_int<13>*, ap_int<22>*, ap_int<6>*, int)' (basic_arith_array_ap.cpp:16:10)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 5.19 seconds. CPU system time: 1.52 seconds. Elapsed time: 7.03 seconds; current allocated memory: 254.875 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 254.877 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.04 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.11 seconds; current allocated memory: 260.417 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.08 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.14 seconds; current allocated memory: 267.614 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_14_1' (basic_arith_array_ap.cpp:14) in function 'basic_arith_array_ap' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.12 seconds. CPU system time: 0.08 seconds. Elapsed time: 0.21 seconds; current allocated memory: 295.400 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.07 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.1 seconds; current allocated memory: 292.487 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'basic_arith_array_ap' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'basic_arith_array_ap' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=ret) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_14_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 37, loop 'VITIS_LOOP_14_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.2 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.24 seconds; current allocated memory: 292.937 MB.

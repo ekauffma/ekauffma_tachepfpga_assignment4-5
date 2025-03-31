@@ -1,0 +1,10 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="basic_arith_array_ap" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="basic_arith_array_ap"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+
